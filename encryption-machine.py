@@ -12,7 +12,6 @@ def encryption_machine():
     #just a variable
   alph = "abcdefghijklmnopqrstuvwxyz"
 
-      #message
   f = input("Enter to encode word=> ")
 
   rot13 = lambda x: "".join([alph[(alph.find(c) + 13) %len(f)] for c in x])
@@ -24,8 +23,6 @@ def encryption_machine():
   a = pyfiglet.figlet_format(i, font='hex')
 
   print("Encoded text=> ", a)
-
-  #print("Number of letters moved in rot13:",len(f))
 
 
 #password authentication
