@@ -36,7 +36,7 @@ try:
 except:
   print('\n')
   print("An error has occured")
-
+  exit(0)
 #the .sleep is just there to make it look like the programm is actually doing something that take a second instead of just 
 #checking if two values are the same
 
@@ -58,3 +58,4 @@ except:
   time.sleep(1)
   print("Cancelling Process...")
   time.sleep(1)
+  exit(0)
