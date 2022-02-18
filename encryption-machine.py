@@ -1,4 +1,4 @@
-#!bin/python3
+#!/usr/bin/python3
 import time
 from database import pass_data
 from passlib.hash import pbkdf2_sha256
