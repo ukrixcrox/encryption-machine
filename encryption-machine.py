@@ -29,7 +29,7 @@ def encryption_machine():
 try:
   i = input("Please enter password to continue=> ")
 
-  print(pbkdf2_sha256.verify(i, pass_data()))
+  #print(pbkdf2_sha256.verify(i, pass_data()))
 except:
   print('\n')
   print("An error has occured")
@@ -41,6 +41,7 @@ except:
 #initialization loop 
 try:
   if pbkdf2_sha256.verify(i, pass_data()) == True:
+    print("Starting Process...")
     time.sleep(1)
     encryption_machine()
 
