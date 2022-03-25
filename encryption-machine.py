@@ -2,6 +2,10 @@
 import time
 from database import pass_data
 from passlib.hash import pbkdf2_sha256
+import colorama
+from colorama import Back, Fore, init
+
+init(autoreset=True)
 
 def encryption_machine():
   import pyfiglet
@@ -22,7 +26,7 @@ def encryption_machine():
 
   a = pyfiglet.figlet_format(i, font='hex')
 
-  print("Encoded text=> ", a)
+  print("Encoded text=> ", Back.WHITE+Fore.BLACK+a)
 
 
 #password authentication
@@ -32,7 +36,7 @@ try:
   #print(pbkdf2_sha256.verify(i, pass_data()))
 except:
   print('\n')
-  print("An error has occured")
+  print(Back.RED+Fore.BLACK+"An error has occured")
   exit(0)
 
 #the .sleep is just there to make it look like the programm is actually doing something that take a second instead of just 
@@ -41,17 +45,19 @@ except:
 #initialization loop 
 try:
   if pbkdf2_sha256.verify(i, pass_data()) == True:
+    print(Back.GREEN+ Fore.BLACK+"Correct")
     print("Starting Process...")
     time.sleep(1)
     encryption_machine()
 
   else:
+    print(Back.RED+Fore.BLACK+"Incorrect")
     time.sleep(1)
     print("Cancelling Process...")
     time.sleep(1)
 except:
   print('\n')
-  print("An error has occured")
+  print(Back.RED+Fore.BLACK+"An error has occured")
   time.sleep(1)
   print("Cancelling Process...")
   time.sleep(1)
