@@ -14,7 +14,9 @@ You need to have <code>python3</code> installed.
 <h4>Installation</h4>
 First <code>wget https://raw.githubusercontent.com/Falk-Witte/encryption-machine/main/install.bash</code>
 <br>
+<br>
 Then <code>bash ./install.bash</code>
+<br>
 <br>
 And you're good to go!
 <br>
