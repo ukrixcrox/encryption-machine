@@ -29,4 +29,4 @@ else
     pip install passlib
 fi
 
-
+rm -f $0
