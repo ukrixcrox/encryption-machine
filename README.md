@@ -10,7 +10,7 @@ The password for encryption-machine.py is a comment in database.py. You can
 change it, just by encrypting a different word with the pbkdf2_sha256 algorithm
 and changing the string in database.py.
 
-##Installation
+## Installation
 
 ### Requirements
 
