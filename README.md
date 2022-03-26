@@ -18,8 +18,6 @@ You need to have python3 installed.
 
 ### Installation
 
-First
-
     wget https://raw.githubusercontent.com/Falk-Witte/encryption-machine/main/install.bash && bash ./install.bash
 
 And you're good to go!
