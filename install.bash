@@ -13,7 +13,9 @@ git clone https://github.com/Falk-Witte/encryption-machine
 
 
 #check if colorama is installed if not then install it.
-if [[ -a ${colorama} ]]
+colorama=~/.local/lib/python3.10/site-packages/colorama/
+
+if [[ -d $colorama ]]
 then
     echo "colorama exists"
 else
@@ -22,7 +24,9 @@ fi
 
 
 #check if passlib is installed if not then install it.
-if [[ -a ${passlib} ]]
+passlib=~/.local/lib/python3.10/site-packages/passlib/
+
+if [[ -d $passlib ]]
 then
     echo "passlib exists"
 else
