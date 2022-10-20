@@ -23,17 +23,5 @@ else
     pip install colorama
 fi
 
-
-#check if passlib is installed if not then install it.
-passlib=~/.local/lib/python3.10/site-packages/passlib/
-passlib2=/usr/lib/python3.10/site-packages/passlib2/
-
-if [[ -d $passlib ]] || [[ -d $passlib2 ]]
-then
-    echo "passlib exists"
-else
-    pip install passlib
-fi
-
 #self destruct after running
-#rm -f $0
+rm -f $0
